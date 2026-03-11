@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Jenn Makiling | Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet"/>
+  <script src="https://kit.fontawesome.com/a2d9d5eada.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  <header class="header">
+    <nav class="navbar">
+      <h1 class="logo">Jenn 🌱</h1>
+      <ul class="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about-me">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero full-home" id="home">
+      <div class="home-container">
+        <h2>Hello! I'm <span class="highlight">Jenn Makiling</span></h2>
+        <p class="subtitle">Front-End Developer & UI Enthusiast</p>
+        <a href="#projects" class="btn">See My Work</a>
+        <a href="1.png" class="btn btn-download" download>📄 Download Resume</a>
+      </div>
+    </section>
+
+    <section class="about-me" id="about-me">
+      <h2>About Me</h2>
+      <div class="about-container">
+        <img src="aboutme.png" alt="Cartoon of Jenn" />
+        <p>Hello! I’m <span class="highlight">Jenn Makiling</span>, a passionate <strong>Front-End Developer</strong> with a love for pastel aesthetics, pixel-perfect UI, and clean code. I enjoy turning ideas into kawaii-coded websites. </p>
+        <p>Whether it’s crafting layouts or adding subtle animations, I’m all about the details. Let’s build something cute and functional together!</p>
+      </div>
+    </section>
+
+    <section class="projects" id="projects">
+      <div class="section-title">
+        <h2>🧁 My Sweet Projects</h2>
+        <p>Some of the work I'm most proud of!</p>
+      </div>
+
+      <div class="projects-grid">
+        <div class="project-card">
+          <img src="project4.jpg" alt="Project 1">
+          <div class="project-info">
+            <h3>Introduction to Human Computer</h3>
+            <p>Designing a High-Impact Landing Page with Modern Web Standards</p>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <img src="project2.jpg" alt="Project 2">
+          <div class="project-info">
+            <h3>Web Systems and Technologies 1</h3>
+            <p>My first Responsive Static Website.</p>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <img src="project3.jpg" alt="Project 3">
+          <div class="project-info">
+            <h3>Web Systems and Technologies 1</h3>
+            <p>Enhancing My Page with JavaScript</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact" id="contact">
+      <h2>Contact Me</h2>
+      <form id="contact-form" action="https://formsubmit.co/jennmakiling200@gmail.com" method="POST">
+        <input type="hidden" name="_captcha" value="false" />
+        
+        <input type="text" id="name" name="name" placeholder="Your Name" required />
+        <div class="error-message" id="name-error"></div>
+
+        <input type="email" id="email" name="email" placeholder="Your Email" required />
+        <div class="error-message" id="email-error"></div>
+
+        <textarea id="message" name="message" rows="5" placeholder="Your Message" required></textarea>
+        <div class="error-message" id="message-error"></div>
+
+        <button type="submit" class="btn">Send 💌</button>
+        <p id="success-message" class="success-message"></p>
+      </form>
+    </section>
+  </main>
+
+  <div id="lightbox" class="lightbox">
+    <span class="close">&times;</span>
+    <img id="lightbox-img" />
+  </div>
+
+  <footer>
+    <p>&copy; 2025 Jenn Makiling. Made with 💚 and a little sparkle.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
